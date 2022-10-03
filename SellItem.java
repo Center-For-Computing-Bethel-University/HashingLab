@@ -37,42 +37,30 @@ public class SellItem {
     }
     
     public void write(RandomAccessFile datafile) throws IOException {
-        datafile.writeChar(location);
-        datafile.writeChar(type);
-        datafile.writeInt(id);
-        datafile.writeInt(amount);
-        datafile.writeDouble(cost);
+         // write this code
     }
     
     public char getLocation() {
-        return location;
+         // write this code
     }
     public char getType() {
-        return type;
+            // write this code
     }
     public int getId() {
-        return id;
+        // write this code
     }
     public int getAmount() {
-        return amount;
+        // write this code
     }
     public double getCost() {
-        return cost;
+        // write this code
     }
     public int[] hash() {
-        int[] hashcodes;
-        hashcodes = new int[2];
-        hashcodes[0] = id / DataFile.BLOCKSIZE;
-        hashcodes[1] = id % DataFile.BLOCKSIZE / DataFile.INDEXSIZE;
-        return hashcodes;
+        // write this code 
     }
     
     public static int[] hash(int id) {
-        int[] hashcodes;
-        hashcodes = new int[2];
-        hashcodes[0] = id / DataFile.BLOCKSIZE;
-        hashcodes[1] = id % DataFile.BLOCKSIZE / DataFile.INDEXSIZE;
-        return hashcodes;
+        // write this code
     }
     
     public boolean equals(SellItem other) {
